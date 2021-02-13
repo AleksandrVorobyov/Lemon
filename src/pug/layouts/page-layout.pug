@@ -1,0 +1,34 @@
+block variables
+
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title #{title}
+
+        meta(name="keywords" content= 'food')
+        link(rel="shortcut icon", href="./img/favicons/favicon.ico", type="image/x-icon")
+        link(rel="stylesheet", href="./css/main.css")
+        link(rel="stylesheet" href="./libs/font-awesome/css/font-awesome.min.css")
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        link(rel="stylesheet", href="./libs/css/owl.carousel.min.css")
+        link(rel="stylesheet", href="./libs/css/owl.theme.default.min.css")
+   
+    body(class=pageClass)
+        
+        .page
+            block content
+
+        <script src="./libs/jquery/jquery-3.3.1.min.js"></script>
+        script(src="./libs/moment/moment.js")
+        <script src="./js/tavo-calendar.js"></script>
+        <script> const my_calendar = new TavoCalendar('#my-calendar', { date: "2021-01-14", format: "YYYY-MM-DD", locale: "de", range_select: true})</script>
+        <script src="./js/main.js"></script>
+        <script src="./js/carousel.js"></script>
+        script(src="./libs/owlcarousel/owl.carousel.min.js")
+        <script>jQuery(document).ready(function($) {new WOW().init();});</script>
+        <script src="./libs/wow/wow.min.js"></script>
+        <script>jQuery(document).ready(function($) {$('.wow').attr('data-wow-duration', '1.5s' );});</script>

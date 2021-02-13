@@ -1,0 +1,151 @@
+.progress-bar__body-title {
+  margin-bottom: 35px;
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  font-family: "PlayfairDisplay-Bold";
+  color: rgb(5, 85, 85);
+  line-height: 1;
+}
+
+.progress-bar__body-row {
+  display: flex;
+}
+
+.progress-bar__body-row + .progress-bar__body-row {
+  margin-top: 45px;
+}
+
+.progress-bar__text-title {
+  margin-bottom: 10px;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  font-family: "Josefin Sans";
+  color: rgb(85, 85, 85);
+  line-height: 1.2;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.progress-bar__text-subtitle {
+  font-size: 14px;
+  letter-spacing: 0.6px;
+  font-weight: 300;
+  font-family: "Josefin Sans";
+  color: rgba(0, 0, 0, 0.502);
+  font-style: italic;
+  line-height: 1.2;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.progress-bar__circle-small {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  margin-right: 25px;
+}
+
+.progress-bar__circle-small svg {
+  width: 80px;
+  height: 80px;
+}
+
+.progress-bar__circle-small .progress-bar__circle-bg {
+  fill: none;
+  stroke-width: 3px;
+  stroke: #e6e6e6;
+}
+
+.progress-bar__circle-small .progress-bar__circle-inner {
+  fill: none;
+  stroke-width: 3px;
+  stroke: #b50051;
+  stroke-linecap: round;
+  stroke-dasharray: 230;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+}
+
+.progress-bar__circle-small {
+  .progress-bar__circle-inner-two {
+    stroke: #055454;
+  }
+  .progress-bar__circle-inner-three {
+    stroke: #87d0c5;
+  }
+}
+
+.progress-bar__circle-small
+  .progress-bar__circle-inner.progress-bar__circle-inner-two {
+  animation: circle-two 3.5s ease-in-out, circle-appear 3.5s;
+  stroke-dashoffset: 80;
+}
+
+.progress-bar__circle-small
+  .progress-bar__circle-inner.progress-bar__circle-inner-three {
+  animation: circle-three 3.5s ease-in-out, circle-appear 3.5s;
+  stroke-dashoffset: 112;
+}
+
+.progress-bar__circle-small
+  .progress-bar__circle-inner.progress-bar__circle-inner-one {
+  stroke-dashoffset: 200;
+  animation: circle-one 3.5s ease-in-out, circle-appear 3.5s;
+}
+
+.progress-bar__circle-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  text-align: center;
+  font-weight: 300;
+  font-family: "Josefin Sans";
+  line-height: 20px;
+  color: rgb(149, 149, 149);
+}
+
+@keyframes circle-two {
+  from {
+    stroke-dashoffset: 232.36;
+  }
+  to {
+    stroke-dashoffset: 80;
+  }
+}
+
+@keyframes circle-one {
+  from {
+    stroke-dashoffset: 230;
+  }
+  to {
+    stroke-dashoffset: 200;
+  }
+}
+
+@keyframes circle-three {
+  from {
+    stroke-dashoffset: 230;
+  }
+  to {
+    stroke-dashoffset: 112;
+  }
+}
+
+@keyframes circle-appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

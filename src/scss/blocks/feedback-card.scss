@@ -1,0 +1,164 @@
+.feedback {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+  z-index: 50;
+}
+
+.feedback-card {
+  width: 520px;
+  height: 520px;
+  padding: 30px 35px 50px 35px;
+  background: #fff;
+  box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.feedback-card__title {
+  display: block;
+  position: relative;
+  padding: 0 5px 5px 5px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Josefin Sans Bold";
+  font-style: italic;
+  color: rgb(0, 0, 0);
+  line-height: 1;
+
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #dddddd;
+  }
+}
+
+.feedback-card__error-img {
+  height: 375px;
+  width: 100%;
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+}
+
+.feedback-card__error-link {
+  display: flex;
+  justify-content: center;
+}
+
+.feedback-card__info {
+  display: flex;
+  margin-top: 20px;
+}
+
+.feedback-card__info-img {
+  display: table;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.feedback-card__info-text-name {
+  margin: 10px 0 15px;
+  font-size: 24px;
+  letter-spacing: 0.7px;
+  font-weight: 700;
+  font-family: "Josefin Sans Bold";
+  color: rgb(0, 0, 0);
+  line-height: 1;
+}
+
+.feedback-card__info-text-from {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.6px;
+  font-family: "Josefin Sans";
+  color: rgb(0, 0, 0);
+  line-height: 1;
+  text-align: left;
+}
+
+.feedback-card__info-text-social {
+  position: relative;
+  margin-bottom: 40px;
+  transition: color 0.4s linear;
+
+  i {
+    transition: color 0.4s linear, transform 0.4s linear;
+  }
+
+  i:hover {
+    color: #921026;
+    transform: scale(1.4);
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #dddddd;
+  }
+}
+
+.feedback-card__info-text-social-link {
+  font-size: 16px;
+  color: rgba(85, 85, 85, 0.502);
+  text-decoration: none;
+}
+
+.feedback-card__info-text-social-link + .feedback-card__info-text-social-link {
+  margin-left: 8px;
+}
+
+.feedback-card__message-title {
+  margin-bottom: 25px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-family: "Josefin Sans Bold";
+  font-style: italic;
+  color: rgb(0, 0, 0);
+  line-height: 1;
+}
+
+.feedback-card__message-text {
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.6px;
+  font-family: "Josefin Sans";
+  font-style: italic;
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 10;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.feedback-card__info-text-sign {
+  display: flex;
+  justify-content: flex-end;
+  height: 70px;
+}

@@ -1,0 +1,17 @@
+.cards-col {
+  position: relative;
+  margin: 80px 0 40px;
+  display: flex;
+  justify-content: space-around;
+  z-index: 50;
+}
+
+.cards-col-item {
+  max-width: 290px;
+}
+
+.cards-col-item {
+  section + section {
+    margin-top: 90px;
+  }
+}

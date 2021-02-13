@@ -1,0 +1,34 @@
+.pagination {
+  padding: 35px 20px;
+}
+
+.pagination-row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+  list-style: none;
+}
+
+.pagination-item .pagination-item__link,
+.pagination-item span {
+  font-size: 18px;
+  font-weight: 300;
+  font-family: "Josefin Sans";
+  color: rgb(0, 0, 0);
+  line-height: 1;
+  text-decoration: none;
+}
+
+.pagination-item__link {
+  transition: color 0.4s linear;
+
+  &:hover {
+    color: #921026;
+    text-decoration: underline;
+  }
+}
+
+.pagination-item + .pagination-item {
+  margin-left: 25px;
+}

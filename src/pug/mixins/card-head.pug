@@ -1,0 +1,16 @@
+mixin card-head-icons(title, link0, link1, link2, link3)
+    .card-head
+        h4.card-head__title #{title}
+        .card-head__social
+            a(href= link0).card-head__social-link
+                <i class="fa fa-google-plus" aria-hidden="true"></i>
+            a(href= link1).card-head__social-link
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+            a(href= link2).card-head__social-link
+                <i class="fa fa-skype" aria-hidden="true"></i>
+            a(href= link3).card-head__social-link
+                <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+
+mixin card-head(title)
+    .card-head
+        h4.card-head__title #{title}

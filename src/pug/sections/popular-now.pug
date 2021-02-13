@@ -1,0 +1,18 @@
+section.popular-now
+    h4.popular-now__title Popular Now
+    h5.popular-now__subtitle Vanilla Frozen Coffee
+    p.popular-now__text Mix coffee, sugar and creamer. Pour into blender and add ice cubes.  Blend until smooth.
+    .popular-now__link
+        +button('#', 'GET IT RECIPE')
+        .popular-now__link-tegs
+            a(href='#').recipe-panel-card__desc-link.recipe-panel-card__desc-link--time
+                img(src="./img/recipe-panel/icons/clock.png", alt="clock")
+                span 25mins
+            a(href='#').recipe-panel-card__desc-link.recipe-panel-card__desc-link--comment
+                img(src="./img/recipe-panel/icons/comment.png", alt="comment")
+                span 240
+            a(href='#').recipe-panel-card__desc-link.recipe-panel-card__desc-link--view
+                img(src="./img/recipe-panel/icons/view.png", alt="view")
+                span 400
+    .popular-now__img
+        img(src="./img/popular-now/01.jpg", alt="popular-bg")

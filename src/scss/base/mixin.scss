@@ -1,0 +1,154 @@
+.forms {
+  display: flex;
+  justify-content: center;
+
+  section + section {
+    margin-left: 90px;
+  }
+}
+
+.comments {
+  section + section {
+    margin-top: 90px;
+  }
+}
+
+#my-calendar {
+  min-height: 240px;
+}
+
+.button__link {
+  display: inline-flex;
+  justify-content: center;
+  position: relative;
+  padding: 7px 12px;
+  min-width: 100px;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: "Josefin Sans Bold";
+  color: rgb(0, 0, 0);
+  line-height: 1;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-width: 1px;
+  border-color: rgb(194, 194, 194);
+  border-style: solid;
+  background: #921026;
+  z-index: 10;
+  overflow: hidden;
+  transition: color 0.4s linear, border-color 0.4s linear;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    background: #fff;
+    z-index: -1;
+    transition: left 0.4s linear;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    background: #fff;
+    z-index: -1;
+    transition: right 0.4s linear;
+  }
+}
+
+.button__link:hover {
+  color: #fff;
+  border-color: rgb(0, 0, 0);
+
+  &::before {
+    left: -50%;
+  }
+
+  &::after {
+    right: -50%;
+  }
+}
+
+.card-head {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #dddddd;
+  }
+}
+
+.card-head__social {
+  display: flex;
+  align-items: center;
+}
+
+.card-head__title {
+  display: block;
+  position: relative;
+  padding: 0 5px 0px 5px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Josefin Sans Bold";
+  font-style: italic;
+  color: rgb(0, 0, 0);
+  line-height: 1;
+}
+
+.card-head__social-link {
+  font-size: 16px;
+  color: rgb(85, 85, 85);
+  transition: color 0.4s linear, transform 0.4s linear;
+
+  &:hover {
+    color: #921026;
+    transform: scale(1.4);
+  }
+}
+
+.card-head__social-link + .card-head__social-link {
+  margin-left: 5px;
+}
+
+.section-post {
+  position: relative;
+  z-index: 50;
+  background: #fff;
+  box-shadow: 0px 0px 13px 0px rgba(11, 12, 12, 0.15);
+  width: 100%;
+  padding: 30px 20px 50px;
+  overflow: hidden;
+}
+
+.post-avatar {
+  display: block;
+  position: relative;
+  max-width: 60px;
+  max-height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}

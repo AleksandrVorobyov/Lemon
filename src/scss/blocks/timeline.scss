@@ -1,0 +1,89 @@
+.timeline {
+  padding: 30px 20px 50px;
+}
+
+.timeline__body-title {
+  display: inline-flex;
+  margin-left: 15px;
+  font-size: 20px;
+  letter-spacing: 0.7px;
+  font-weight: 700;
+  font-family: "PlayfairDisplay-Bold";
+  color: rgb(5, 85, 85);
+  line-height: 1;
+}
+
+.timeline__body-col-title {
+  display: inline-flex;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 0.6px;
+  font-family: "Josefin Sans";
+  color: rgba(85, 85, 85, 0.8);
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.timeline__body-wrap {
+  position: relative;
+  min-height: 230px;
+  max-width: 200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: rotate(-90deg);
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -18px;
+    height: 100%;
+    width: 2px;
+    background-color: rgb(85, 85, 85);
+    opacity: 0.2;
+  }
+}
+
+.timeline__body-col {
+  display: grid;
+}
+
+.timeline__body-col-row {
+  display: inline-flex;
+  align-items: center;
+}
+
+.timeline__body-col-graph-easy {
+  margin-right: 5px;
+  width: 70px;
+  height: 10px;
+  background-color: rgb(135, 208, 197);
+}
+
+.timeline__body-col-graph-mid {
+  margin-right: 5px;
+  width: 100px;
+  height: 10px;
+  background-color: rgb(13, 89, 89);
+}
+
+.timeline__body-col-graph-long {
+  margin-right: 5px;
+  width: 130px;
+  height: 10px;
+  background-color: rgb(181, 0, 81);
+}
+
+.timeline__body-desc {
+  margin-top: 15px;
+  padding: 0 10px;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.7px;
+  font-family: "Josefin Sans";
+  color: rgb(106, 106, 106);
+  line-height: 1.2;
+}

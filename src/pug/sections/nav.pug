@@ -1,0 +1,31 @@
+section.nav
+    .nav__logo
+        +logo('#', 'logo--mini')
+    nav.nav__links
+        ul.nav__links-wrap 
+            li.nav__links-item
+                a(href="#").nav-link 
+                    span HOME
+            li.nav__links-item
+                a(href="#").nav-link
+                    span Recipes
+            li.nav__links-item
+                a(href="#").nav-link
+                    span Photo Galleries
+            li.nav__links-item
+                a(href="#").nav-link
+                    span Videos
+            li.nav__links-item
+                a(href="#").nav-link
+                    span All Categories
+                .nav__links-table
+                    a(href="#") RECOMMENDED
+                    a(href="#") POPULAR
+                    a(href="#") QUICK
+                    a(href="#") HEALTHY
+                    a(href="#") newest
+    .nav__search
+        input(type="search" class ='nav__input' placeholder='Search...')
+        button(type='button' class='nav__btn' id='nav-search-btn')
+            i(class="fa fa-search" aria-hidden="true")
+            span Find a recipe

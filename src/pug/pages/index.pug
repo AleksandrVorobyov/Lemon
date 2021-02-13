@@ -1,0 +1,41 @@
+extends ../layouts/page-layout.pug
+include ./../mixins/*.pug
+
+block variables
+	- var title = 'Главная страница';
+	- var pageClass= "index";
+	- var pageFileName= "index.html";
+
+
+block content
+	header
+		.container
+			include ../sections/header-logo.pug
+			include ../sections/nav.pug
+			include ../sections/header-carousel.pug
+	main 
+		.container 
+			include ../sections/recipe-panel.pug
+			include ../sections/recipe-post.pug
+			include ../sections/feedback-card.pug
+			.cards-col
+				.cards-col-item 
+					include ../sections/post-mini.pug
+					include ../sections/progress-bar.pug
+				.cards-col-item 
+					include ../sections/recipe-libs.pug
+					include ../sections/tags.pug
+					include ../sections/calendar.pug
+				.cards-col-item 
+					include ../sections/popular-now.pug
+					include ../sections/timeline.pug
+			.forms
+				include ../sections/login.pug
+				include ../sections/sign-in.pug
+			.comments
+				include ../sections/post-comment.pug
+				include ../sections/comment-wall.pug
+				include ../sections/pagination.pug
+	footer
+		.container
+			include ../sections/footer.pug

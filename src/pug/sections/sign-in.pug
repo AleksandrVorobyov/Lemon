@@ -1,0 +1,18 @@
+section.section-post.sign-in 
+    h5.login__title Sign in
+    p.login__subtitle Sign in for LEMON
+    .login__form
+        input.login__form-input(type="email", name="form-email" placeholder='email')
+        input.login__form-input(type="text", name="form-name" placeholder='user name')
+        input.login__form-input(type="password", name="form-password" placeholder='password')
+        input.login__form-input(type="password", name="form-password" placeholder='reapet password')
+    .login__form-link
+        +button('#', "SIGN UP")
+    .login__form-social
+        a(href="#") 
+            i(class="fa fa-facebook" aria-hidden="true")
+        a(href="#") 
+            i(class="fa fa-google-plus" aria-hidden="true")
+    .login__form-sign-in.sign-in-link By joining LEMON, you agree to our  
+        a.login__form-sign-in-link(href="#") Terms of Service.
+

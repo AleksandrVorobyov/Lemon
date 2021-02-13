@@ -1,0 +1,21 @@
+section.section-post.login 
+    h5.login__title Login
+    p.login__subtitle Login for LEMON
+    .login__form
+        input.login__form-input(type="email", name="form-email" placeholder='email')
+        input.login__form-input(type="password", name="form-password" placeholder='password')
+        .login__form-inner 
+            input.login__form-inner-checkbox(type="checkbox", name="form-checkbox" id='login-remember-me')
+            label.login__form-checkbox(for="login-remember-me")
+                span.login__fake-checkbox
+                span Remember me
+            a(href="#").login__form-inner-link Forgot your password ?
+    .login__form-link
+        +button('#', "LOGIN")
+    .login__form-social
+        a(href="#") 
+            i(class="fa fa-facebook" aria-hidden="true")
+        a(href="#") 
+            i(class="fa fa-google-plus" aria-hidden="true")
+    .login__form-sign-in Don’t have an accont?
+        a.login__form-sign-in-link(href="#")  Sign in

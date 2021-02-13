@@ -1,0 +1,15 @@
+mixin recipe-panel-card(link, img, alt, title, linkTime, textTime, linkCom, textCom, linkView, textView)
+    .recipe-panel-card
+        a(href= link).recipe-panel-card__img
+            img(src="./img/recipe-panel/" + img, alt= alt)
+        h3.recipe-panel-card__title #{title}
+        .recipe-panel-card__desc
+            a(href= linkTime).recipe-panel-card__desc-link.recipe-panel-card__desc-link--time
+                img(src="./img/recipe-panel/icons/clock.png", alt="clock")
+                span #{textTime}
+            a(href= linkCom).recipe-panel-card__desc-link.recipe-panel-card__desc-link--comment
+                img(src="./img/recipe-panel/icons/comment.png", alt="comment")
+                span #{textCom}
+            a(href= linkView).recipe-panel-card__desc-link.recipe-panel-card__desc-link--view
+                img(src="./img/recipe-panel/icons/view.png", alt="view")
+                span #{textView}

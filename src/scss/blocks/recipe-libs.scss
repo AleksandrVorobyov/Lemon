@@ -1,0 +1,158 @@
+.recipe-libs {
+  padding-bottom: 15px;
+}
+
+.recipe-libs__nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.recipe-libs__nav-text {
+  position: relative;
+  padding: 5px;
+  font-size: 12px;
+  font-weight: 300;
+  font-family: "Josefin Sans";
+  color: rgba(0, 0, 0, 0.8);
+  text-transform: uppercase;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.recipe-libs__nav-item + .recipe-libs__nav-item {
+  margin-left: 15px;
+}
+
+.recipe-libs__nav-item {
+  input:checked + .recipe-libs__nav-text {
+    font-weight: 700;
+    font-family: "Josefin Sans Bold";
+    color: #921026;
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.3s, 0.3s;
+    &::before,
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+.recipe-libs__nav-item input {
+  position: absolute;
+  left: -9999px;
+  visibility: hidden;
+}
+
+.recipe-libs__nav-text:hover {
+  color: #921026;
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.3s, 0.3s;
+  &::before,
+  &::after {
+    width: 100%;
+  }
+}
+
+.recipe-libs__nav-text::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #921026;
+  transition: width 0.4s linear 0s;
+}
+
+.recipe-libs__nav-text::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 1px;
+  background-color: #921026;
+  transition: width 0.4s linear 0s;
+}
+
+.recipe-libs__btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.recipe-libs__cards {
+  margin-bottom: 30px;
+}
+
+.recipe-libs__card {
+  position: relative;
+  display: flex;
+}
+
+.recipe-libs__card::before {
+  position: absolute;
+  content: "";
+  bottom: -15px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #921026;
+  transition: width .5s ease-in-out;
+}
+
+.recipe-libs__card:hover::before {
+  width: 100%;
+}
+
+.recipe-libs__card + .recipe-libs__card {
+  margin-top: 30px;
+}
+
+.recipe-libs__card-img {
+  margin-right: 15px;
+  height: 45px;
+  width: 50px;
+  min-width: 50px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.recipe-libs__card-text-title {
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  font-family: "Josefin Sans";
+  color: rgb(0, 0, 0);
+  line-height: 1;
+
+  span {
+    font-weight: 700;
+    font-family: "Josefin Sans Bold";
+  }
+}
+
+.recipe-libs__card-text-subtitle {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  font-family: "Josefin Sans Bold";
+  color: rgb(0, 0, 0);
+  line-height: 1;
+}
+
+.recipe-libs__card-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

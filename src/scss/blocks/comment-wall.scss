@@ -1,0 +1,148 @@
+.comment-wall {
+  padding: 20px 40px 50px;
+}
+
+.comment-wall-item + .comment-wall-item {
+  border-top: 2px solid rgb(221, 221, 221);
+}
+
+.comment-wall-item-row {
+  position: relative;
+  display: flex;
+  width: auto;
+  padding: 10px 10px;
+}
+
+.comment-wall-item-row + .comment-wall-item-row {
+  border-top: 2px solid rgb(221, 221, 221);
+}
+
+.comment-wall-item-row {
+  margin-left: 70px;
+}
+
+.comment-wall-item-row:first-child {
+  margin-left: 0px;
+}
+
+.comment-wall-item-row + .comment-wall-item-row {
+  margin-top: 15px;
+}
+
+.comment-wall__social {
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+  min-width: 100px;
+}
+
+.comment-wall__avatar {
+  margin-right: 20px;
+}
+
+.comment-wall__desc {
+  position: relative;
+  width: 100%;
+}
+
+.comment-wall__desc-text {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  font-family: "Josefin Sans";
+  color: rgb(0, 0, 0);
+  line-height: 1;
+}
+
+.comment-wall__desc-title {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: baseline;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  font-family: "Josefin Sans Bold";
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  line-height: 1;
+
+  a {
+    margin-left: 15px;
+    color: rgb(98, 148, 148);
+    transition: color 0.4s linear;
+
+    &:hover {
+      color: #921026;
+    }
+  }
+}
+
+.comment-wall__desc-date {
+  margin-bottom: 15px;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  font-family: "Josefin Sans Bold";
+  color: rgb(98, 148, 148);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.comment-wall__desc-content {
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  font-family: "Josefin Sans";
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+
+  img {
+    max-width: 300px;
+    width: 100%;
+    height: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  p + img,
+  img + p,
+  img + img,
+  p + p {
+    margin-top: 15px;
+  }
+}
+
+.comment-wall__social .comment-wall__social-link {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Open Sans";
+  color: rgb(85, 85, 85);
+  line-height: 1;
+  text-decoration: none;
+  transition: color 0.4s linear;
+
+  span + i {
+    margin-left: 5px;
+  }
+
+  &:hover,
+  &:hover i {
+    color: #921026;
+  }
+
+  &:focus,
+  &:focus i {
+    color: #921026;
+    font-weight: 900;
+  }
+}
+
+.comment-wall__social-link + .comment-wall__social-link {
+  margin-left: 10px;
+}
+
+.comment-wall__social i {
+  font-size: 12px;
+  color: rgb(85, 85, 85);
+  text-decoration: none;
+}

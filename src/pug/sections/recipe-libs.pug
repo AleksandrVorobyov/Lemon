@@ -1,0 +1,39 @@
+section.section-post.recipe-libs 
+    +card-head-icons('Recipe', '#', '#', '#', '#')
+    nav.recipe-libs__nav
+        .recipe-libs__nav-item 
+            input(type="radio", name="recipe-libs-nav" id='recipe-libs-easy' checked)
+            label.recipe-libs__nav-text(for="recipe-libs-easy") easy
+        .recipe-libs__nav-item 
+            input(type="radio", name="recipe-libs-nav" id='recipe-libs-middle')
+            label.recipe-libs__nav-text(for="recipe-libs-middle") middle
+        .recipe-libs__nav-item 
+            input(type="radio", name="recipe-libs-nav" id='recipe-libs-long')
+            label.recipe-libs__nav-text(for="recipe-libs-long") long
+    .recipe-libs__cards 
+        .recipe-libs__card
+            a(href="#").recipe-libs__card-link 
+            .recipe-libs__card-img
+                img(src="./img/recipe-libs/cards/01.jpg", alt="cards-01")
+            .recipe-libs__card-text 
+                h6.recipe-libs__card-text-title by 
+                    span Smuckersreg Toppings
+                p.recipe-libs__card-text-subtitle Thanks for the recipe lorem nks for the recipe
+        .recipe-libs__card
+            a(href="#").recipe-libs__card-link 
+            .recipe-libs__card-img
+                img(src="./img/recipe-libs/cards/02.jpg", alt="cards-02")
+            .recipe-libs__card-text 
+                h6.recipe-libs__card-text-title by 
+                    span Smuckersreg Toppings
+                p.recipe-libs__card-text-subtitle Thanks for the recipe lorem nks for the recipe
+        .recipe-libs__card
+            a(href="#").recipe-libs__card-link 
+            .recipe-libs__card-img
+                img(src="./img/recipe-libs/cards/03.jpg", alt="cards-03")
+            .recipe-libs__card-text 
+                h6.recipe-libs__card-text-title by 
+                    span Smuckersreg Toppings
+                p.recipe-libs__card-text-subtitle Thanks for the recipe lorem nks for the recipe
+    .recipe-libs__btn 
+        +button('#', "view more")

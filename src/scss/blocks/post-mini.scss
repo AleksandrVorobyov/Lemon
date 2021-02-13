@@ -1,0 +1,98 @@
+.post-mini {
+  padding: 25px 0 0;
+}
+
+.post-mini__title {
+  position: relative;
+  padding: 0 0px 15px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 15px;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  font-family: "PlayfairDisplay-Bold";
+  color: rgb(5, 85, 85);
+  line-height: 1.2;
+  text-align: center;
+
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #dddddd;
+  }
+}
+
+.post-mini__desc {
+  margin-left: 25px;
+  margin-right: 25px;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.post-mini__desc-avatar {
+  margin-right: 20px;
+}
+
+.post-mini__desc-text-title {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  font-family: "Josefin Sans";
+  color: rgb(0, 0, 0);
+  line-height: 1;
+}
+
+.post-mini__desc-text-subtitle {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  font-family: "Josefin Sans Bold";
+  color: rgb(0, 0, 0);
+  line-height: 1;
+}
+
+.post-mini__desc-text-links {
+  display: flex;
+}
+
+.post-mini__carousel {
+  position: relative;
+}
+
+.post-mini__carousel.owl-carousel.owl-theme .owl-dots {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  .owl-dot {
+    outline: none;
+  }
+
+  .owl-dot.active span {
+    background: #555555;
+  }
+
+  span {
+    background: #ffffff;
+  }
+}
+
+.post-mini__carousel-item {
+  width: 100%;
+  height: 200px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}

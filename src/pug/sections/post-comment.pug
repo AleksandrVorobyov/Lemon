@@ -1,0 +1,13 @@
+section.section-post.post-comment 
+    .post-comment__head 
+        h4.post-comment__head-title Post a Comment
+        .post-comment__head-links-wrap
+            a(href="#").post-comment__head-link Facebook
+            span.post-comment__head-link-border |
+            a(href="#").post-comment__head-link Twitter
+    form(action="").post-comment__form
+        .post-comment__form-avatar
+            +avatar("#", "02.jpg", "avatar-02")
+        .post-comment__form-comment
+            input(type="text", name="post-comment-form-comment").post-comment__form-comment-input
+            button(type="submit").post-comment__form-comment-btn post

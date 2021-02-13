@@ -1,0 +1,176 @@
+.login {
+  margin-top: 45px;
+  margin-bottom: 45px;
+  width: 330px;
+}
+
+.login__title {
+  display: block;
+  position: relative;
+  padding: 0 5px 10px 5px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Josefin Sans Bold";
+  font-style: italic;
+  color: rgb(0, 0, 0);
+  line-height: 1;
+
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #dddddd;
+  }
+}
+
+.login__subtitle {
+  margin-bottom: 20px;
+  padding-left: 5px;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: "Josefin Sans";
+  color: rgb(0, 0, 0);
+  line-height: 1;
+}
+
+.login__form-input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  padding: 0 15px;
+  border: 1px solid rgb(194, 194, 194);
+  background-color: rgb(255, 255, 255);
+  box-shadow: inset 0px 2px 7px 0px rgba(11, 12, 12, 0.37);
+  outline: none;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.6px;
+  font-family: "Josefin Sans";
+  color: rgb(0, 0, 0);
+  line-height: 1;
+
+  &::placeholder {
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.6px;
+    font-family: "Josefin Sans";
+    color: rgb(0, 0, 0);
+    line-height: 1;
+  }
+}
+
+.login__form-inner {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.login__fake-checkbox {
+  position: relative;
+  display: block;
+  margin-right: 5px;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #9a9a9a;
+  overflow: hidden;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+  }
+}
+
+.login__form-checkbox {
+  display: flex;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0.4px;
+  font-family: "Josefin Sans";
+  color: rgba(0, 0, 0, 0.541);
+  line-height: 1;
+  cursor: pointer;
+}
+
+.login__form-inner-link {
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0.4px;
+  font-family: "Josefin Sans";
+  color: rgba(0, 0, 0, 0.541);
+  line-height: 1;
+  text-decoration: none;
+  transition: color 0.3s linear;
+
+  &:hover {
+    color: #921026;
+    text-decoration: underline;
+  }
+}
+
+.login__form-inner-checkbox {
+  position: absolute;
+  left: -9999px;
+  visibility: hidden;
+}
+
+.login__form-inner {
+  input:checked + label {
+    .login__fake-checkbox::before {
+      background: url("../img/form/icons/checkbox.png") center center / contain
+        no-repeat;
+    }
+  }
+}
+
+.login__form-link {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.login__form-social {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  a + a {
+    margin-left: 20px;
+  }
+}
+
+.login__form-social a {
+  text-decoration: none;
+  font-size: 22px;
+  color: rgb(85, 85, 85);
+}
+
+.login__form-sign-in {
+  display: block;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  font-family: "Josefin Sans";
+  color: rgba(0, 0, 0, 0.541);
+  line-height: 1;
+  text-align: center;
+
+  a {
+    text-align: center;
+    text-decoration: none;
+    transition: color 0.3s linear;
+    color: rgba(0, 0, 0, 0.541);
+
+    &:hover {
+      color: #921026;
+      text-decoration: underline;
+    }
+  }
+}
