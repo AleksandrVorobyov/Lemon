@@ -24,8 +24,19 @@ section.nav
                     a(href="#") QUICK
                     a(href="#") HEALTHY
                     a(href="#") newest
+    .nav__dropdown
+        h4.nav__dropdown-title#dropdown-title Menu
+            <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+        .nav__dropdown-wrap#dropdown-links 
+            a(href="#").nav__dropdown-link HOME
+            a(href="#").nav__dropdown-link Recipes
+            a(href="#").nav__dropdown-link Photo Galleries
+            a(href="#").nav__dropdown-link Videos
+            a(href="#").nav__dropdown-link All Categories
     .nav__search
         input(type="search" class ='nav__input' placeholder='Search...')
         button(type='button' class='nav__btn' id='nav-search-btn')
             i(class="fa fa-search" aria-hidden="true")
             span Find a recipe
+    button.nav__burger#nav-burger(type='button') 
+        span

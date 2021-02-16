@@ -1,9 +1,26 @@
 .feedback {
   position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   margin: 40px 0;
   z-index: 50;
+
+  @media (min-width: 1150px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.feedback-card + .feedback-card {
+  margin-top: 45px;
+}
+
+@media (min-width: 1150px) {
+  .feedback-card + .feedback-card {
+    margin-top: 0px;
+  }
 }
 
 .feedback-card {

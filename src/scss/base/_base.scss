@@ -41,9 +41,13 @@ img {
 }
 
 .container {
-  max-width: 1155px;
+  max-width: 1150px;
   padding: 0 15px;
-  margin: auto;
+  margin: 0 auto;
+}
+
+@media (min-width: 1150px) {
+
 }
 
 ul {

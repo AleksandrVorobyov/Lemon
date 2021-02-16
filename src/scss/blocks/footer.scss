@@ -27,6 +27,10 @@
 }
 
 .footer__nav {
+  display: none;
+  @media (min-width: 1150px) {
+    display: block;
+  }
 }
 
 .footer__nav-row {
