@@ -1,7 +1,10 @@
 .login {
-  margin-top: 45px;
   margin-bottom: 45px;
   width: 330px;
+
+  @media (min-width: 1150px) {
+    margin-top: 45px;
+  }
 }
 
 .login__title {

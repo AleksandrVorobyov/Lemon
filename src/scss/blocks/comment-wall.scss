@@ -1,5 +1,9 @@
 .comment-wall {
-  padding: 20px 40px 50px;
+  padding: 20px 20px 50px;
+
+  @media (min-width: 550px) {
+    padding: 20px 40px 50px;
+  }
 }
 
 .comment-wall-item + .comment-wall-item {
@@ -17,12 +21,14 @@
   border-top: 2px solid rgb(221, 221, 221);
 }
 
-.comment-wall-item-row {
-  margin-left: 70px;
-}
-
-.comment-wall-item-row:first-child {
-  margin-left: 0px;
+@media (min-width: 550px) {
+  .comment-wall-item-row {
+    margin-left: 70px;
+  }
+  
+  .comment-wall-item-row:first-child {
+    margin-left: 0px;
+  }
 }
 
 .comment-wall-item-row + .comment-wall-item-row {
@@ -32,7 +38,6 @@
 .comment-wall__social {
   display: flex;
   justify-content: center;
-  padding-top: 25px;
   min-width: 100px;
 }
 
@@ -55,8 +60,14 @@
   line-height: 1;
 }
 
-.comment-wall__desc-title {
+.comment-wall__desc-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 10px;
+}
+
+.comment-wall__desc-title {
   display: flex;
   align-items: baseline;
   font-size: 18px;
@@ -88,6 +99,7 @@
 }
 
 .comment-wall__desc-content {
+  max-width: 720px;
   font-size: 16px;
   font-weight: 300;
   letter-spacing: 0.5px;

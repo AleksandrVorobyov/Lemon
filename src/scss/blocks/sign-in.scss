@@ -1,12 +1,15 @@
 .sign-in {
-  margin-top: 45px;
   margin-bottom: 45px;
   width: 330px;
+
+  @media (min-width: 1150px) {
+    margin-top: 45px;
+  }
 }
 
 .sign-in-link {
-    text-align: left;
-    a {
-        color: blue;
-    }
+  text-align: left;
+  a {
+    color: blue;
+  }
 }

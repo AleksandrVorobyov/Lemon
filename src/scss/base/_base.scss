@@ -42,12 +42,14 @@ img {
 
 .container {
   max-width: 1150px;
-  padding: 0 15px;
   margin: 0 auto;
+
+  @media (min-width: 720px) {
+    padding: 0 15px;
+  }
 }
 
 @media (min-width: 1150px) {
-
 }
 
 ul {
