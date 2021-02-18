@@ -1,6 +1,6 @@
 .recipe-panel {
   position: relative;
-  padding: 40px;
+  padding: 40px 20px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -10,11 +10,17 @@
   flex-direction: column;
   z-index: 50;
   background-color: rgb(255, 255, 255);
-  box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.15);
-  
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+
+  @media (min-width: 550px) {
+    padding: 40px;
+  }
+
   @media (min-width: 720px) {
     max-width: 520px;
     margin: 0px auto 40px;
+    border-top: none;
+    box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.15);
   }
 
   @media (min-width: 850px) {
@@ -93,6 +99,10 @@
   color: rgb(85, 85, 85);
   line-height: 1;
   text-decoration: none;
+
+  img {
+    margin-right: 2px;
+  }
 
   &:hover {
     text-decoration: underline;

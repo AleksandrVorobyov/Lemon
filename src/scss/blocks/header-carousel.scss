@@ -1,12 +1,14 @@
 .header-carousel-wrap {
   position: relative;
-  box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.15);
   height: 440px;
   width: 100%;
   z-index: 30;
+  margin-top: 105px;
 
   @media (min-width: 720px) {
+    box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.15);
     margin-bottom: 40px;
+    margin-top: 0;
   }
 
   @media (min-width: 1150px) {
@@ -34,7 +36,8 @@
 
 .header-carousel-item {
   position: relative;
-  padding-left: 45px;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-top: 45px;
   padding-bottom: 20px;
   width: 100%;
@@ -42,6 +45,11 @@
   background: linear-gradient(#ffffff, #ffffff);
   z-index: 10;
   overflow: hidden;
+
+  @media (min-width: 550px) {
+    padding-left: 45px;
+    padding-right: 0;
+  }
 
   @media (min-width: 1150px) {
     padding-left: 90px;

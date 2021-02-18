@@ -18,6 +18,22 @@ body {
   background: #eaeaea;
 }
 
+.body--hidden {
+  overflow: hidden;
+}
+
+header {
+  z-index: 100;
+}
+
+main {
+  z-index: 50;
+}
+
+footer {
+  z-index: 80;
+}
+
 input,
 textarea {
   font-size: 16px;

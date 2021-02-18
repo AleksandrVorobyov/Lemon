@@ -151,10 +151,15 @@
   position: relative;
   z-index: 50;
   background: #fff;
-  box-shadow: 0px 0px 13px 0px rgba(11, 12, 12, 0.15);
   width: 100%;
   padding: 30px 20px 50px;
   overflow: hidden;
+  border-top: 3px solid #dddddd;
+
+  @media (min-width: 720px) {
+    border: none;
+    box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.15);
+  }
 }
 
 .post-avatar {

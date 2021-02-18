@@ -14,18 +14,23 @@
   position: relative;
   display: flex;
   width: auto;
-  padding: 10px 10px;
+  margin-top: 15px;
 }
 
 .comment-wall-item-row + .comment-wall-item-row {
   border-top: 2px solid rgb(221, 221, 221);
 }
 
+.comment-wall-item + .comment-wall-item {
+  margin-top: 15px;
+}
+
 @media (min-width: 550px) {
   .comment-wall-item-row {
+    padding: 10px 10px;
     margin-left: 70px;
   }
-  
+
   .comment-wall-item-row:first-child {
     margin-left: 0px;
   }
@@ -33,6 +38,7 @@
 
 .comment-wall-item-row + .comment-wall-item-row {
   margin-top: 15px;
+  padding-top: 15px;
 }
 
 .comment-wall__social {
@@ -42,7 +48,11 @@
 }
 
 .comment-wall__avatar {
-  margin-right: 20px;
+  margin-right: 10px;
+
+  @media (min-width: 550px) {
+    margin-right: 20px;
+  }
 }
 
 .comment-wall__desc {
@@ -63,8 +73,13 @@
 .comment-wall__desc-title-row {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
   align-items: center;
   margin-bottom: 10px;
+
+  @media (min-width: 550px) {
+    flex-direction: row;
+  }
 }
 
 .comment-wall__desc-title {
@@ -157,4 +172,14 @@
   font-size: 12px;
   color: rgb(85, 85, 85);
   text-decoration: none;
+}
+
+.comment-wall__social {
+  margin-top: 20px;
+}
+
+@media (min-width: 550px) {
+  .comment-wall__social {
+    margin-top: 0px;
+  }
 }
